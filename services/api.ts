@@ -1,9 +1,13 @@
+import Constants from 'expo-constants'
+
+const {MOVIE_API_KEY} = Constants.manifest2?.extra || {}
+
 const TMDB_API_CONFIG = {
     BASE_URL: "https://api.themoviedb.org",
     API_KEY: process.env.MOVIE_API_KEY,
     headers: {
         accept: 'application/json',
-        Authorization: `Bearer ${process.env.MOVIE_API_KEY}`
+        Authorization: `Bearer ${MOVIE_API_KEY}`
     }
 }
 
@@ -23,8 +27,6 @@ const fetchMovies = async ({query}: {query: string}) => {
     }
 
     const data = await response.json()
-    console.log("aaaaaaaaaaaaaaaaaaaaaa")
-    console.log(data)
 
     return data.results
 

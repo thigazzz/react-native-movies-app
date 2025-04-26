@@ -1,6 +1,6 @@
 import { icons } from "@/constants/icons";
 import { Link } from "expo-router";
-import { Text, View, Image, TextInput, TouchableOpacity } from "react-native";
+import { Text, View, Image, TouchableOpacity } from "react-native";
 
 const MovieCard = ({
   id,

@@ -8,6 +8,9 @@
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "extra": {
+      "MOVIE_API_KEY": "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MmMxMzNmZTBiYzE0M2QzY2I2NzdiNjA1ZDVkMmY3OSIsIm5iZiI6MTc0NTQ3ODk1Ni4zNTM5OTk5LCJzdWIiOiI2ODA5ZTUyYzhiY2VhNjZhODZhYThhZDgiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.UOZ3YBFW_TpYrckulUOeabMRr29izO-_efjhshHDujQ"
+    },
     "ios": {
       "supportsTablet": true
     },
