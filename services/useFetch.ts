@@ -1,3 +1,4 @@
+import { getQualifiedRouteComponent } from "expo-router/build/useScreens"
 import { useEffect, useState } from "react"
 
 const useFetch = <T>(fetchFunction: () => Promise<T>, autoFetch = true) => {
@@ -32,6 +33,8 @@ const useFetch = <T>(fetchFunction: () => Promise<T>, autoFetch = true) => {
             fetchData()
         }
     }, [])
+
+    
 
     return {data, loading, error, refetch: fetchData, reset}
 }
