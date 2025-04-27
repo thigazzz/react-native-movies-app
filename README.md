@@ -1,50 +1,58 @@
-# Welcome to your Expo app 👋
+# Motivação
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este projeto foi criado para **aplicar na prática** os conhecimentos adquiridos durante os estudos de **React Native**. O principal objetivo foi explorar e reforçar os conceitos fundamentais da tecnologia, como:
 
-## Get started
+- Roteamento entre telas.
+- Criação de hooks personalizados.
+- Gerenciamento de estado.
+- Utilização de bibliotecas externas (como **Tailwind CSS** para mobile).
+  
+Embora eu tenha tido contato com o **React Native** anos atrás durante o meu **TCC** na **ETEC**, me distanciei um pouco da tecnologia para me aprofundar mais no desenvolvimento com **Python**. Esse projeto foi uma excelente oportunidade de revisitar conceitos de **React** e **JavaScript**, e me impressionei bastante com a evolução da tecnologia ao longo dos anos.
 
-1. Install dependencies
+Um dos aspectos que mais me impressionou foi o **roteamento entre telas**, que ficou muito mais simples e intuitivo. No passado, era necessário definir todas as rotas manualmente com elementos como `Router`, mas agora a organização de arquivos faz esse processo de maneira muito mais fluida.
 
+Outro aspecto que me facilitou bastante foi a utilização do **Tailwind CSS** para estilização no ambiente mobile. Ele simplifica a criação de interfaces responsivas, o que acelerou o desenvolvimento e melhorou a organização do código.
+
+---
+
+# Tecnologias Utilizadas
+
+- **React Native**: Para o desenvolvimento do app mobile.
+- **Expo**: Para facilitar o desenvolvimento e testes rápidos.
+- **NativeWind**: Para estilização, proporcionando uma abordagem mais ágil e semântica para o design.
+- **Router**: Para gerenciamento de navegação entre telas.
+- **TMDB API**: Para consumo de dados de filmes e informações sobre eles.
+
+---
+
+# Funcionalidades
+
+- **Tela Home**: Exibe os filmes mais populares e recentes usando a API da **TMDB**.
+- **Tela Pesquisar**: Permite pesquisar filmes específicos por nome.
+- **Tela Detalhes**: Exibe descrição, nota, ano de lançamento, capa, etc, dos filmes.
+- **Interface Responsiva**: Utiliza Tailwind para garantir uma experiência de usuário consistente e fluida em diferentes tamanhos de tela.
+
+---
+
+# Como Executar o Projeto
+
+1. Clone o repositório:
+   ```bash
+   git clone <URL_DO_REPOSITORIO>
+
+2. Navegue até o diretório do projeto:
+   ```bash
+   cd nome-do-projeto
+   
+3. Instale as dependências
    ```bash
    npm install
-   ```
 
-2. Start the app
-
+4. Inicie o projeto com o Expo:
    ```bash
-    npx expo start
-   ```
+   npx expo start
+5. Adicione sua chave da API da TMDB no arquivo services/api.ts
+6. Escaneie o QR code gerado com o Expo Go ou rode no navegador.
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+# Conclusão
+Esse projeto serviu como uma excelente oportunidade de relembrar conceitos de React Native e testar novas ferramentas. Foi interessante perceber a evolução da tecnologia, principalmente na parte de navegação e estilização. Continuarei explorando React Native em projetos futuros para aprimorar cada vez mais minhas habilidades com a tecnologia.
