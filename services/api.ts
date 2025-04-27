@@ -13,8 +13,8 @@ const TMDB_API_CONFIG = {
 
 const fetchMovies = async ({ query }: { query: string }) => {
   const url = query
-    ? `${TMDB_API_CONFIG.BASE_URL}/3/search/movie?query=${encodeURIComponent(query)}`
-    : `${TMDB_API_CONFIG.BASE_URL}/3/discover/movie?sort_by=popularity.desc`;
+    ? `${TMDB_API_CONFIG.BASE_URL}/3/search/movie?language=pt-br?query=${encodeURIComponent(query)}`
+    : `${TMDB_API_CONFIG.BASE_URL}/3/discover/movie?language=pt-br?sort_by=popularity.desc`;
 
   const response = await fetch(url, {
     method: 'GET',
@@ -29,5 +29,29 @@ const fetchMovies = async ({ query }: { query: string }) => {
   
   return data.results;
 };
+
+export const fetchMovieDetails = async (
+    movieId: string
+  ): Promise<MovieDetails> => {
+    try {
+      const response = await fetch(
+        `${TMDB_API_CONFIG.BASE_URL}/3/movie/${movieId}?language=pt-br`,
+        {
+          method: "GET",
+          headers: TMDB_API_CONFIG.headers,
+        }
+      );
+  
+      if (!response.ok) {
+        throw new Error(`Failed to fetch movie details: ${response.statusText}`);
+      }
+  
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.error("Error fetching movie details:", error);
+      throw error;
+    }
+  };
 
 export default fetchMovies;
