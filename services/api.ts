@@ -1,7 +1,7 @@
 // TODO: Encontrar uma maneira de esconder a chave da API
 // Usando .env, o Expo Go não carrega
 // Usando Constants também não.
-const MOVIE_API_KEY =  "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MmMxMzNmZTBiYzE0M2QzY2I2NzdiNjA1ZDVkMmY3OSIsIm5iZiI6MTc0NTQ3ODk1Ni4zNTM5OTk5LCJzdWIiOiI2ODA5ZTUyYzhiY2VhNjZhODZhYThhZDgiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.UOZ3YBFW_TpYrckulUOeabMRr29izO-_efjhshHDujQ"
+const MOVIE_API_KEY =  process.env.MOVIE_API_KEY //ERROR
 
 const TMDB_API_CONFIG = {
   BASE_URL: "https://api.themoviedb.org",
